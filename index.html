@@ -1,0 +1,35 @@
+<html>
+
+<head>
+ 
+  <title>Expandable Search Box</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+<div class="hero">
+    
+    <div id="searchBox">
+        <img src="glass.png" id="searchIcon">
+        <input type="text" placeholder=" Search ">
+        <img src="mic.png" class="mic-icon">
+    </div>
+    
+</div>
+
+<script>
+    var searchBox = document.getElementById("searchBox");
+    var searchIcon = document.getElementById("searchIcon");
+    
+    searchIcon.onclick = function(){
+        searchBox.classList.toggle("active");
+    }
+    
+</script>
+
+
+</body>
+</html>
